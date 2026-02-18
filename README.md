@@ -1,6 +1,4 @@
-Here is a professional, polished, and robust `README.md` file tailored exactly to your needs. You can copy-paste this directly into your GitHub repository.
-
----
+<img src="assets/images/icon.png">
 
 # 🚀 ContentCraft: AI-Powered Vocational Training Assistant
 
