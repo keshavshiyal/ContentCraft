@@ -4,6 +4,10 @@
 
 **ContentCraft** is a comprehensive, open-source web tool designed to assist educators in planning and delivering training.
 
+![PHP Version](https://img.shields.io/badge/PHP-8.1%2B-blue)
+![License](https://img.shields.io/badge/license-Open%20Source-green)
+![AI-Powered](https://img.shields.io/badge/AI-Gemini%20Flash-orange)
+
 While specifically tailored for **ITI Instructors** and **Vocational Trainers**, this tool is powerful enough for **any teaching professional** looking to automate administrative paperwork. By leveraging the advanced **Google Gemini API**, ContentCraft transforms seconds of input into detailed, standardized instructional material.
 
 ---
@@ -22,6 +26,11 @@ While specifically tailored for **ITI Instructors** and **Vocational Trainers**,
 * **🌐 Multi-Language Support:** Seamlessly generates content in **English**, **Hindi**, and **Gujarati**, ensuring technical terms are accurate across languages.
 * **fp📄 Easy Export:** Download any generated document as a **PDF** or editable **Word (DOCX)** file.
 
+## 📸 Screenshots
+| Dashboard | Official Lesson Plan |
+|---|---|
+| <img src="assets/images/dashboard_preview.png" width="400"> | <img src="assets/images/plan_preview.png" width="400"> |
+
 ---
 
 ## ⚙️ Prerequisites
@@ -33,6 +42,9 @@ Before you begin, ensure you have the following:
 3. **Git (Optional):** To clone the repository easily.
 
 ---
+
+> [!IMPORTANT]
+> **Human-in-the-Loop:** ContentCraft is an assistant, not a replacement. Always verify AI-generated technical steps and safety data against your specific curriculum and safety standards.
 
 ## 📥 Installation Guide (Step-by-Step)
 
