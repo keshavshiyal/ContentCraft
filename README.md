@@ -1,4 +1,4 @@
-<img src="assets/images/icon.png">
+<img src="assets/images/icon.png" width="50">
 
 # 🚀 ContentCraft: AI-Powered Vocational Training Assistant
 
