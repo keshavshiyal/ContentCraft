@@ -1,0 +1,11 @@
+# Security: Ignore the real key
+includes/config.php.local
+
+# System files
+path.txt
+.DS_Store
+Thumbs.db
+
+# User Uploads (If you have an uploads folder)
+uploads/*
+!uploads/.gitkeep

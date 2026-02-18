@@ -1,0 +1,717 @@
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Gujarati:wght@400;700&family=Noto+Serif+Devanagari:wght@400;700&family=Merriweather:wght@300;400;700&display=swap');
+
+/* --- THEME VARIABLES (Based on your Logo) --- */
+:root {
+    --primary-color: #0f3460;
+    /* Deep Navy Blue */
+    --primary-light: #164a8a;
+    --accent-color: #f39c12;
+    /* Amber/Orange */
+    --text-dark: #2c3e50;
+    --text-light: #6c757d;
+    --bg-light: #f8f9fa;
+    --white: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* --- RESET & BASICS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* --- HEADER & NAVIGATION --- */
+header {
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
+.logo-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.logo-text span {
+    color: var(--accent-color);
+}
+
+/* For 'Craft' if split */
+
+/* Desktop Menu */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--text-dark);
+    transition: color 0.3s;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+/* DROPDOWN MENU */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dropdown-toggle::after {
+    content: "▼";
+    font-size: 0.6em;
+    color: var(--accent-color);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--white);
+    width: 280px;
+    /* Wide enough for categories */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    padding: 1rem 0;
+    border-top: 3px solid var(--accent-color);
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    top: 120%;
+    /* Slight gap effect */
+}
+
+/* Dropdown Categories */
+.dropdown-group {
+    padding: 0.5rem 1.5rem;
+}
+
+.group-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 4px;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 8px 0;
+    color: var(--primary-color);
+    font-size: 0.95rem;
+    transition: transform 0.2s;
+}
+
+.dropdown-item:hover {
+    color: var(--accent-color);
+    transform: translateX(5px);
+}
+
+/* HAMBURGER (Mobile) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 1rem;
+    background: linear-gradient(135deg, rgba(15, 52, 96, 0.05) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(243, 156, 18, 0.3);
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* ... Keep all your Desktop CSS above this line ... */
+
+/* --- RESPONSIVE / MOBILE FIX --- */
+@media (max-width: 768px) {
+
+    /* 1. Show Hamburger */
+    .hamburger {
+        display: block;
+        z-index: 1001;
+    }
+
+    /* 2. Mobile Menu Drawer */
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        /* Hidden by default */
+        top: 70px;
+        /* Height of the header */
+        width: 100%;
+        height: calc(100vh - 70px);
+        /* Full screen height minus header */
+        background-color: var(--white);
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: flex-start;
+        /* Align text to left */
+        padding: 20px 0;
+        transition: 0.3s ease-in-out;
+        overflow-y: auto;
+        /* Allow scrolling if menu is long */
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 3. Slide in when active */
+    .nav-menu.active {
+        left: 0;
+    }
+
+    /* 4. Mobile Links Styling */
+    .nav-item {
+        width: 100%;
+        margin: 0;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 15px 30px;
+        width: 100%;
+        border-bottom: 1px solid #f0f0f0;
+        font-size: 1.1rem;
+    }
+
+    /* 5. FIX: Dropdown on Mobile */
+    .dropdown-menu {
+        position: static;
+        /* IMPORTANT: Stops it from floating */
+        visibility: visible;
+        opacity: 1;
+        width: 100%;
+        transform: none;
+        box-shadow: none;
+        border-top: none;
+        background-color: #f4f6f8;
+        /* Slightly darker to distinguish */
+        display: none;
+        /* Hidden until clicked */
+        padding-left: 20px;
+        /* Indent sub-items */
+    }
+
+    /* Show dropdown when the parent has class 'active' */
+    .dropdown.active .dropdown-menu {
+        display: block;
+        animation: fadeIn 0.3s;
+    }
+
+    .dropdown-group {
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .dropdown-item {
+        padding: 12px 15px;
+    }
+
+    /* Arrow rotation for visual feedback */
+    .dropdown.active .dropdown-toggle::after {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- A4 PAPER SIMULATION --- */
+.paper-container {
+    background-color: #525659;
+    /* Dark background like a PDF viewer */
+    padding: 40px 20px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.a4-page {
+    background: white;
+    width: 210mm;
+    min-height: 297mm;
+    padding: 20mm;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    color: #000;
+    font-size: 12pt;
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+    /* Standard doc font */
+    box-sizing: border-box;
+    overflow: visible;
+    /* Changed from 'hidden' to 'visible' to allow print flow */
+    height: auto;
+    /* Ensure it grows with content */
+    min-height: 297mm;
+    /* Keep min-height for the screen look */
+}
+
+/* Typography inside the paper */
+.a4-page h1 {
+    font-size: 24pt;
+    color: #000;
+    text-align: center;
+    border-bottom: 2px solid #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.a4-page h2 {
+    font-size: 16pt;
+    color: #2c3e50;
+    margin-top: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.a4-page ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.a4-page li {
+    margin-bottom: 5px;
+}
+
+.a4-page p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.a4-page table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.a4-page th,
+.a4-page td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+
+.a4-page th {
+    background-color: #f0f0f0;
+}
+
+/* Responsive Paper for Mobile */
+@media (max-width: 800px) {
+    .a4-page {
+        width: 100%;
+        min-height: auto;
+        padding: 20px;
+    }
+}
+
+/* --- LOADING OVERLAY --- */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 9999;
+    display: none;
+    /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid var(--accent-color);
+    /* Orange */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 15px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Language-Specific Typography */
+.lang-gujarati {
+    font-family: 'Noto Serif Gujarati', 'Merriweather', serif;
+}
+
+.lang-hindi {
+    font-family: 'Noto Serif Devanagari', 'Merriweather', serif;
+}
+
+.lang-english {
+    font-family: 'Merriweather', 'Times New Roman', serif;
+}
+
+/* Polished Content Styling (Report View) */
+.content-output {
+    text-align: justify;
+    line-height: 1.8;
+    /* More breathing room for reading */
+    color: #222;
+}
+
+.content-output h1 {
+    font-size: 26pt;
+    color: #1a1a1a;
+    text-align: center;
+    border-bottom: 3px solid var(--accent-color);
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+
+.content-output h2 {
+    font-size: 18pt;
+    color: var(--primary-color);
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+.content-output h3 {
+    font-size: 14pt;
+    color: #444;
+    margin-top: 25px;
+    font-weight: 700;
+}
+
+.content-output p {
+    margin-bottom: 18px;
+    font-size: 12pt;
+}
+
+.content-output ul,
+.content-output ol {
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.content-output li {
+    margin-bottom: 8px;
+    padding-left: 5px;
+}
+
+/* Make strong tags pop but stay professional */
+.content-output strong {
+    color: #000;
+    font-weight: 700;
+}
+
+/* Clean Tables for Export compatibility */
+.content-output table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 11pt;
+}
+
+.content-output th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.content-output td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.content-output tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+/* ======================================================================================= */
+/* --- ABOUT PAGE STYLES --- */
+/* ======================================================================================= */
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.mission-box {
+    background-color: var(--white);
+    border-left: 5px solid var(--accent-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    margin-bottom: 50px;
+}
+
+.mission-box h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.feature-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+.developer-section {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid #ddd;
+    color: var(--text-light);
+}
+
+/* ==================================================================================  */
+/* --- LESSON PLAN FORM STYLES --- */
+/* ==================================================================================  */
+.lp-container {
+    font-family: 'Times New Roman', serif;
+    color: #000;
+}
+
+/* The Main Header Grid */
+.lp-header-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 11pt;
+}
+
+.lp-header-table td {
+    border: 1px solid #000; /* Strict black border */
+    padding: 8px;
+    vertical-align: top;
+}
+
+.lp-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14pt;
+    background-color: #f0f0f0; /* Light gray for the main title */
+}
+
+/* The Content Sections (1. Preparation, etc.) */
+.lp-section-title {
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    width: 100%;
+}
+
+.lp-sub-item {
+    margin-left: 20px;
+    margin-bottom: 8px;
+    font-size: 11pt;
+}
+
+/* The Presentation Table (Section 3) */
+.lp-presentation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 10pt;
+}
+
+.lp-presentation-table th, .lp-presentation-table td {
+    border: 1px solid #000;
+    padding: 6px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.lp-presentation-table th {
+    background-color: #e0e0e0;
+    text-align: center;
+    font-weight: bold;
+}
+
