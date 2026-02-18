@@ -26,7 +26,6 @@ define('BASE_URL', $base_url);
 // Get your key from: https://aistudio.google.com/app/apikey
 // API KEY — Always keep private, never expose publicly
 define('GEMINI_API_KEY', 'Your-API-KEY-HERE'); 
-// define('GEMINI_API_KEY', 'AIzaSyA1C39l1CGPlpkP0xm5JwyAt9nup-eqKKM'); 
 define('GEMINI_API_URL', 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent');
 
 // Control Output Length (Default: 50,000)
