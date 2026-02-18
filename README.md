@@ -1,19 +1,115 @@
-# ContentCraft: AI-Powered ITI Lesson Planner 📚
+Here is a professional, polished, and robust `README.md` file tailored exactly to your needs. You can copy-paste this directly into your GitHub repository.
 
-ContentCraft is a PHP-based web tool designed for ITI Instructors and Teachers. It uses the Google Gemini API to automatically generate standard government-format paperwork in seconds.
+---
 
-## 🚀 Features
-- **Lesson Plans:** Generates official format plans (Single Table & Standard).
-- **Demonstration Plans:** Creates practical guides with safety points.
-- **Graded Exercises:** Auto-generates aim, procedure, and assessment criteria.
-- **MCQ Generator:** Creates massive question banks with answer keys.
-- **Multi-Language:** Supports English, Gujarati, and Hindi.
+# 🚀 ContentCraft: AI-Powered Vocational Training Assistant
 
-## 🛠️ Installation
-1. Clone the repo or download the ZIP.
-2. Place the folder in your XAMPP `htdocs` directory.
-3. Open `includes/config.php` and enter your **Google Gemini API Key**.
-4. Run `index.php` in your browser.
+**ContentCraft** is a comprehensive, open-source web tool designed to revolutionize how educators plan and deliver training.
+
+While specifically tailored for **ITI Instructors** and **Vocational Trainers**, this tool is powerful enough for **any teaching professional** looking to automate administrative paperwork. By leveraging the advanced **Google Gemini API**, ContentCraft transforms seconds of input into detailed, standardized instructional material.
+
+---
+
+## 🌟 Key Features
+
+* **📝 Automated Lesson Planning:** Generate standardized, detailed lesson plans with teaching scripts in seconds.
+* **🛠️ Demonstration Plans:** Create step-by-step practical guides complete with safety precautions, tool lists, and visual aid suggestions.
+* **📖 Theory Material:** Instant generation of deep-dive theory notes, definitions, and analogies to help students grasp complex concepts.
+* **✅ Assessment Tools:**
+* **MCQ Generator:** Create massive question banks with answer keys.
+* **Descriptive Q&A:** Generate short and long-answer questions.
+* **Graded Exercises:** Design job assignments with clear aims, procedures, and assessment criteria.
+
+
+* **🌐 Multi-Language Support:** Seamlessly generates content in **English**, **Hindi**, and **Gujarati**, ensuring technical terms are accurate across languages.
+* **fp📄 Easy Export:** Download any generated document as a **PDF** or editable **Word (DOCX)** file.
+
+---
+
+## ⚙️ Prerequisites
+
+Before you begin, ensure you have the following:
+
+1. **XAMPP (or any PHP server):** To run the application locally.
+2. **Google Gemini API Key:** You can get a free key from [Google AI Studio](https://aistudio.google.com/app/apikey).
+3. **Git (Optional):** To clone the repository easily.
+
+---
+
+## 📥 Installation Guide (Step-by-Step)
+
+Follow these steps to get ContentCraft running on your computer using XAMPP.
+
+### Step 1: Set Up XAMPP
+
+1. Download and install [XAMPP](https://www.apachefriends.org/index.html) for your operating system.
+2. Open the **XAMPP Control Panel** and start the **Apache** module.
+
+### Step 2: Install ContentCraft
+
+1. Navigate to your XAMPP installation folder (usually `C:\xampp\htdocs`).
+2. Download this repository as a ZIP file and extract it, or run the following command inside the `htdocs` folder:
+```bash
+git clone https://github.com/YOUR_USERNAME/ContentCraft.git
+
+```
+
+
+3. You should now have a folder named `ContentCraft` inside `htdocs`.
+
+### Step 3: Configure the API Key 🔐
+
+*This is the most important step!*
+
+1. Open the `ContentCraft/includes` folder.
+2. You will see a file named `config.php` (or `config.php.local`).
+3. Open it in a text editor (like Notepad or VS Code).
+4. Find the line that looks like this:
+```php
+define('GEMINI_API_KEY', 'YOUR_API_KEY_HERE');
+
+```
+
+
+5. Replace `YOUR_API_KEY_HERE` with your actual API Key from Google.
+6. Save the file.
+
+### Step 4: Run the Application 🚀
+
+1. Open your web browser (Chrome, Edge, etc.).
+2. Type the following in the address bar:
+`http://localhost/ContentCraft`
+3. You should see the Welcome Dashboard!
+
+---
+
+## ⚠️ Important Usage & Quota Note
+
+**ContentCraft** relies on the Google Gemini API. Please be aware of the following:
+
+* **Token Usage:** Every time you click "Generate," the tool sends a request to Google. This consumes "tokens."
+* **Quota Limits:** If you are using the free tier of Gemini, there are limits on how many requests you can make per minute/day.
+* **Recommendation:** To avoid errors, we recommend waiting **at least 5 minutes** between generating large documents to ensure your quota resets.
+
+---
+
+## 📄 License & Disclaimer
+
+**License:** This project is open-source and free to use.
+
+### 🚫 Liability & Disclaimer of Warranty
+
+By using this software, you agree to the following terms:
+
+1. **No Warranty:** This software is provided "as is," without warranty of any kind, express or implied. The developers make no guarantees regarding the accuracy, reliability, or completeness of the content generated by the AI.
+2. **AI Inaccuracies:** Artificial Intelligence can make mistakes (hallucinations). **It is the sole responsibility of the Instructor/User to verify all technical data, safety instructions, and educational content before using it in a classroom or practical setting.**
+3. **No Liability:** The creators and contributors of ContentCraft shall **not be held liable** for any claim, damages, data loss, or other liability arising from the use of this software.
+4. **Data Privacy:** This tool sends prompts to Google's API. Do not enter sensitive personal or private data into the prompt fields.
+
+---
 
 ## 🤝 Contributing
-I am a novice developer! Suggestions and pull requests are welcome.
+
+We welcome contributions from the community! Whether you are a developer, an instructor, or a hobbyist, feel free to fork this repository, make improvements, and submit a Pull Request.
+
+**Happy Teaching!** 🎓
