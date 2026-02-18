@@ -2,7 +2,7 @@
 
 # 🚀 ContentCraft: AI-Powered Vocational Training Assistant
 
-**ContentCraft** is a comprehensive, open-source web tool designed to revolutionize how educators plan and deliver training.
+**ContentCraft** is a comprehensive, open-source web tool designed to assist educators in planning and delivering training.
 
 While specifically tailored for **ITI Instructors** and **Vocational Trainers**, this tool is powerful enough for **any teaching professional** looking to automate administrative paperwork. By leveraging the advanced **Google Gemini API**, ContentCraft transforms seconds of input into detailed, standardized instructional material.
 
