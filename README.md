@@ -43,24 +43,16 @@ Follow these steps to get ContentCraft running on your computer using XAMPP.
 1. Download and install [XAMPP](https://www.apachefriends.org/index.html) for your operating system.
 2. Open the **XAMPP Control Panel** and start the **Apache** module.
 
-### Step 2: Install ContentCraft
-
-1. Navigate to your XAMPP installation folder (usually `C:\xampp\htdocs`).
-2. Download this repository as a ZIP file and extract it, or run the following command inside the `htdocs` folder:
-```bash
-git clone https://github.com/YOUR_USERNAME/ContentCraft.git
-
-```
-
-OR
-
-If you are not comfirtable with commands follow this steps ...
-
 ### Step 2: Install ContentCraft (Manual Method)
+
 1. Scroll to the top of this GitHub page and click the green <> Code button.
+
 2. Select Download ZIP from the menu.
+
 3. Go to your Downloads folder and find the file (usually named ContentCraft-main.zip).
+
 4. Extract the ZIP file (Right-click > "Extract to [folder_name]").
+
 5. Copy the extracted folder (rename it to ContentCraft if you want) and Paste it into your XAMPP installation folder:
 
 ```bash
@@ -69,7 +61,7 @@ Windows: C:\xampp\htdocs\
 Mac/Linux: /opt/lampp/htdocs/
 ```
 
-3. You should now have a folder named `ContentCraft` inside `htdocs`.
+You should now have a folder named `ContentCraft` inside `htdocs`.
 
 ### Step 3: Configure the API Key 🔐
 
