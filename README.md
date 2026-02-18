@@ -52,6 +52,21 @@ git clone https://github.com/YOUR_USERNAME/ContentCraft.git
 
 ```
 
+OR
+
+If you are not comfirtable with commands follow this steps;
+Step 2: Install ContentCraft (Manual Method)
+Scroll to the top of this GitHub page and click the green <> Code button.
+Select Download ZIP from the menu.
+Go to your Downloads folder and find the file (usually named ContentCraft-main.zip).
+Extract the ZIP file (Right-click > "Extract All...").
+Copy the extracted folder (rename it to ContentCraft if you want) and Paste it into your XAMPP installation folder:
+
+```bash
+Windows: C:\xampp\htdocs\
+
+Mac/Linux: /opt/lampp/htdocs/
+```
 
 3. You should now have a folder named `ContentCraft` inside `htdocs`.
 
