@@ -1,0 +1,32 @@
+Sub Macro1()
+'
+' Macro1 Macro 
+' Use this Macro to automatically Format exported Word file.
+' Font used Noto serif Gujarati
+'
+    Dim tbl As Table
+    Dim para As Paragraph
+    
+    ' Apply font to entire document
+    ActiveDocument.Content.Font.Name = "Noto Serif Gujarati"
+    
+    ' Loop through all tables
+    For Each tbl In ActiveDocument.Tables
+        
+        ' Apply Table Grid style
+        tbl.Style = "Table Grid"
+        
+        ' Set font color automatic for table
+        tbl.Range.Font.Color = wdColorAutomatic
+        
+        ' Remove paragraph spacing ONLY inside table cells
+        For Each para In tbl.Range.Paragraphs
+            With para.Format
+                .SpaceBefore = 0
+                .SpaceAfter = 0
+            End With
+        Next para
+        
+    Next tbl
+    
+End Sub
