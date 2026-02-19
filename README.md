@@ -41,6 +41,14 @@ Let AI assist with preparation.
 
 ---
 
+## Screenshots
+
+| Home |
+| --- |
+| <img src="assets/images/home.png" width="400">
+
+---
+
 ## 🌍 Multi-Language Support
 
 * English
@@ -211,6 +219,7 @@ If this project helps you:
 # 👨‍💻 Author
 
 **Keshav Shiyal**
+
 AI + Education + Automation Enthusiast
 
 GitHub:
