@@ -1,6 +1,6 @@
 <img src="assets/images/icon.png" width="50">
 
-# 🚀 ContentCraft: AI-Powered Vocational Training Assistant
+# 🚀 ContentCraft: AI-Powered Content Generation
 
 **ContentCraft** is a comprehensive, open-source web tool designed to assist educators in planning and delivering training.
 
