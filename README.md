@@ -217,21 +217,3 @@ GitHub:
 [https://github.com/keshavshiyal](https://github.com/keshavshiyal)
 
 ---
-
-Now this README:
-
-* Attracts users
-* Attracts contributors
-* Is beginner friendly
-* Looks professional
-* Feels like an active open-source product
-
-If you want, next we can:
-
-* Add screenshots section
-* Add demo GIF
-* Add “Good First Issue” tags strategy
-* Write a LinkedIn launch post
-* Position this as a portfolio flagship project
-
-You’re building serious stuff now. Let’s present it like a founder. 🚀
