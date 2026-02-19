@@ -1,105 +1,164 @@
-<img src="assets/images/icon.png" width="50">
+# ContentCraft 🚀
 
-# 🚀 ContentCraft: AI-Powered Content Generation
+### AI-Powered Teaching Assistant for Instructors
 
-**ContentCraft** is a comprehensive, open-source web tool designed to assist educators in planning and delivering training.
+![Built With PHP](https://img.shields.io/badge/Built%20With-PHP-777BB4?logo=php&logoColor=white)
+![Frontend JS](https://img.shields.io/badge/Frontend-JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![AI Powered](https://img.shields.io/badge/AI-Powered%20by%20Gemini-ff4c4c)
+![Education Tool](https://img.shields.io/badge/Domain-Education-blueviolet)
+![Open Source](https://img.shields.io/badge/Open%20Source-Community%20Driven-brightgreen)
+![Maintained](https://img.shields.io/badge/Maintained-Yes-success)
 
-![PHP Version](https://img.shields.io/badge/PHP-8.1%2B-blue)
-![License](https://img.shields.io/badge/license-Open%20Source-green)
-![AI-Powered](https://img.shields.io/badge/AI-Gemini%20Flash-orange)
+> Generate lesson plans, theory notes, question banks, and more — in seconds.
 
-While specifically tailored for **ITI Instructors** and **Vocational Trainers**, this tool is powerful enough for **any teaching professional** looking to automate administrative paperwork. By leveraging the advanced **Google Gemini API**, ContentCraft transforms seconds of input into detailed, standardized instructional material.
+ContentCraft is an AI-powered web application built to help instructors, ITI trainers, and educators create structured academic content quickly and professionally.
+
+Instead of spending hours writing documentation manually, let AI assist you — while you focus on teaching.
 
 ---
 
-## 🌟 Key Features
+## 🏷️ Labels
 
-* **📝 Automated Lesson Planning:** Generate standardized, detailed lesson plans with teaching scripts in seconds.
-* **🛠️ Demonstration Plans:** Create step-by-step practical guides complete with safety precautions, tool lists, and visual aid suggestions.
-* **📖 Theory Material:** Instant generation of deep-dive theory notes, definitions, and analogies to help students grasp complex concepts.
-* **✅ Assessment Tools:**
-* **MCQ Generator:** Create massive question banks with answer keys.
-* **Descriptive Q&A:** Generate short and long-answer questions.
-* **Graded Exercises:** Design job assignments with clear aims, procedures, and assessment criteria.
+`PHP` `JavaScript` `AJAX` `HTML` `CSS` `Google Gemini API` `AI` `Education` `Automation` `Open Source`
 
+---
 
-* **🌐 Multi-Language Support:** Seamlessly generates content in **English**, **Hindi**, and **Gujarati**, ensuring technical terms are accurate across languages.
-* **fp📄 Easy Export:** Download any generated document as a **PDF** or editable **Word (DOCX)** file.
+## ✨ What You Can Generate
+
+* 📝 Lesson Plans
+* 🧪 Demonstration Plans
+* 📘 Theory Notes
+* ❓ MCQ Question Banks
+* ✍️ Short & Long Answer Questions
+* 📊 Graded Exercises
 
 ## 📸 Screenshots
-| Dashboard | Official Lesson Plan |
-|---|---|
-| <img src="assets/images/dashboard_preview.png" width="400"> | <img src="assets/images/plan_preview.png" width="400"> |
+| Dashboard |
+|---|
+| <img src="assets/images/home.png" width="400"> |
+
+| Lesson plan |  |
+| --- | --- |
+| <img src="assets/images/example-lp (1).png" width="400"> | <img src="assets/images/example-lp (2).png"> |
+| <img src="assets/images/example-lp (3).png" width="400"> | <img src="assets/images/example-lp (4).png"> |
+| <img src="assets/images/example-lp (5).png" width="400"> | |
 
 ---
 
-## ⚙️ Prerequisites
+## 🌍 Multi-Language Support
 
-Before you begin, ensure you have the following:
+* English
+* Hindi
+* Gujarati
 
-1. **XAMPP (or any PHP server):** To run the application locally.
-2. **Google Gemini API Key:** You can get a free key from [Google AI Studio](https://aistudio.google.com/app/apikey).
-3. **Git (Optional):** To clone the repository easily.
+Perfect for Indian vocational and technical education systems.
 
 ---
 
-> [!IMPORTANT]
-> **Human-in-the-Loop:** ContentCraft is an assistant, not a replacement. Always verify AI-generated technical steps and safety data against your specific curriculum and safety standards.
+## 🎯 Why ContentCraft?
 
-## 📥 Installation Guide (Step-by-Step)
+✔ Saves hours of repetitive documentation work
+✔ Generates structured, formatted academic content
+✔ Simple local setup
+✔ Built for real instructors
+✔ Fully open source
 
-Follow these steps to get ContentCraft running on your computer using XAMPP.
+---
 
-### Step 1: Set Up XAMPP
+# 📦 Easy Setup (ZIP Method – Beginner Friendly)
 
-1. Download and install [XAMPP](https://www.apachefriends.org/index.html) for your operating system.
-2. Open the **XAMPP Control Panel** and start the **Apache** module.
+No technical expertise required. Just follow these steps carefully.
 
-### Step 2: Install ContentCraft (Manual Method)
+---
 
-1. Scroll to the top of this GitHub page and click the green <> Code button.
+## Step 1️⃣ – Download the Project
 
-2. Select Download ZIP from the menu.
+1. Go to this repository page.
+2. Click the green **Code** button.
+3. Click **Download ZIP**.
+4. Extract the ZIP file on your computer.
 
-3. Go to your Downloads folder and find the file (usually named ContentCraft-main.zip).
+---
 
-4. Extract the ZIP file (Right-click > "Extract to [folder_name]").
+## Step 2️⃣ – Install XAMPP (If Not Installed)
 
-5. Copy the extracted folder (rename it to ContentCraft if you want) and Paste it into your XAMPP installation folder:
+Download XAMPP from:
+[https://www.apachefriends.org/](https://www.apachefriends.org/)
 
-```bash
-Windows: C:\xampp\htdocs\
+Install it normally.
 
-Mac/Linux: /opt/lampp/htdocs/
+---
+
+## Step 3️⃣ – Move Project to XAMPP
+
+1. Go to your XAMPP installation folder.
+2. Open the folder named:
+
+```
+htdocs
 ```
 
-You should now have a folder named `ContentCraft` inside `htdocs`.
+3. Paste the extracted **ContentCraft** folder inside `htdocs`.
 
-### Step 3: Configure the API Key 🔐
+---
 
-*This is the most important step!*
+## Step 4️⃣ – Start Server
 
-1. Open the `ContentCraft/includes` folder.
-2. You will see a file named `config.php` (or `config.php.local`).
-3. Open it in a text editor (like Notepad or VS Code).
-4. Find the line that looks like this:
+1. Open XAMPP Control Panel.
+2. Click **Start** next to:
+
+   * Apache
+
+(You don’t need MySQL for basic usage.)
+
+---
+
+## Step 5️⃣ – Add Your Gemini API Key
+
+1. Open the project folder.
+2. Find the PHP file where the API key is defined.
+3. Replace:
+
 ```php
 define('GEMINI_API_KEY', 'YOUR_API_KEY_HERE');
-
 ```
 
+with your real API key.
 
-5. Replace `YOUR_API_KEY_HERE` with your actual API Key from Google.
-6. Save the file.
-
-### Step 4: Run the Application 🚀
-
-1. Open your web browser (Chrome, Edge, etc.).
-2. Type the following in the address bar:
-`http://localhost/ContentCraft`
-3. You should see the Welcome Dashboard!
+You can create a free API key from:
+[https://ai.google.dev/](https://ai.google.dev/)
 
 ---
+
+## Step 6️⃣ – Run the App
+
+Open your browser and type:
+
+```
+http://localhost/ContentCraft/
+```
+
+Done ✅
+
+You’re ready to generate content.
+
+---
+
+# 🧠 How It Works (Simple Explanation)
+
+1. You select content type.
+2. You enter topic and details.
+3. The system sends a request to Google Gemini AI.
+4. AI generates structured academic content.
+5. You can copy or export it.
+
+---
+
+# ⚠️ Important
+
+AI-generated content should always be reviewed before official submission.
+
+ContentCraft is a productivity assistant — not a replacement for academic judgment.
 
 ## ⚠️ Important Usage & Quota Note
 
@@ -108,6 +167,56 @@ define('GEMINI_API_KEY', 'YOUR_API_KEY_HERE');
 * **Token Usage:** Every time you click "Generate," the tool sends a request to Google. This consumes "tokens."
 * **Quota Limits:** If you are using the free tier of Gemini, there are limits on how many requests you can make per minute/day.
 * **Recommendation:** To avoid errors, we recommend waiting **at least 5 minutes** between generating large documents to ensure your quota resets.
+
+---
+
+# 🚀 Roadmap
+
+We are actively improving the project. Planned features:
+
+* User accounts
+* Content history saving
+* Cloud deployment
+* Better UI/UX
+* Export improvements
+* Prompt customization panel
+* AI quality feedback scoring
+
+---
+
+# 🤝 Contributing
+
+We welcome contributors of all levels.
+
+Ways you can contribute:
+
+* Improve UI design
+* Enhance prompt engineering
+* Improve formatting output
+* Add new language support
+* Improve API handling
+* Add authentication system
+* Improve documentation
+
+### How to Contribute
+
+1. Fork this repository
+2. Create a new branch
+3. Make your improvements
+4. Submit a Pull Request
+
+Even small improvements are welcome.
+
+---
+
+# 🌟 Support the Project
+
+If this project helps you:
+
+⭐ Star the repository
+🍴 Fork it
+🛠️ Improve it
+📢 Share it with educators
 
 ---
 
@@ -126,8 +235,11 @@ By using this software, you agree to the following terms:
 
 ---
 
-## 🤝 Contributing
+# 👨‍💻 Author
 
-We welcome contributions from the community! Whether you are a developer, an instructor, or a hobbyist, feel free to fork this repository, make improvements, and submit a Pull Request.
+**Keshav Shiyal**
+Developer passionate about AI + Education + Automation
 
-**Happy Teaching!** 🎓
+GitHub: [https://github.com/keshavshiyal](https://github.com/keshavshiyal)
+
+---
