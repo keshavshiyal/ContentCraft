@@ -186,7 +186,9 @@ ContentCraft is an assistant — not a replacement for professional judgment.
 
 ---
 
-# 🚀 Roadmap
+
+
+# 🚀 Future Roadmap
 
 Upcoming improvements:
 
@@ -198,6 +200,23 @@ Upcoming improvements:
 * Prompt customization
 * Dark mode
 * Performance optimization
+
+---
+
+## ⚡ Pro-Tip: One-Click Formatting (Word Macro)
+
+For the best visual results after exporting to **DOCX**, we have included a pre-configured VBA Macro. This macro automatically formats tables, sets the correct fonts (including Noto Serif Gujarati), and adjusts margins for printing.
+
+### How to use the Macro:
+1.  Open the file `extras/macro.txt` and **copy** all the code inside.
+2.  Open your exported **Word (DOCX)** file.
+3.  Press `Alt + F11` to open the VBA Editor.
+4.  Go to `Insert > Module` and **paste** the code.
+5.  Close the VBA window and press `Alt + F8`.
+6.  Select `FormatContentCraft` (or your macro name) and click **Run**.
+
+> [!NOTE]
+> This step is optional but highly recommended for a perfectly formatted, print-ready document.
 
 ---
 
