@@ -76,7 +76,7 @@ To ensure professional readability and accurate rendering of multi-language tech
 * **Export Compatibility:** These fonts are integrated into our export logic for PDF and DOCX files.
 
 > [!TIP]
-> **Better Results:** For the best experience while viewing or editing exported documents, you may be required to install the **Noto Serif** font family on your local system. You can download them for free from [Google Fonts](https://fonts.google.com/).
+> **Better Results:** For the best experience while viewing or editing exported documents, you may be required to install the **Noto Serif** font family on your local system. You can download them for free from [Google Fonts](https://fonts.google.com/) here.
 
 ---
 
