@@ -67,6 +67,19 @@ Designed for real classroom environments in India.
 
 ---
 
+## 🎨 Typography & Design
+
+To ensure professional readability and accurate rendering of multi-language technical terms, **ContentCraft** utilizes specialized typography:
+
+* **English Content:** Uses standard system fonts like **Segoe UI**, **Roboto**, and **Arial**.
+* **Gujarati & Hindi Content:** Optimized for **Noto Serif Gujarati** and **Noto Serif Devanagari**.
+* **Export Compatibility:** These fonts are integrated into our export logic for PDF and DOCX files.
+
+> [!TIP]
+> **Better Results:** For the best experience while viewing or editing exported documents, you may be required to install the **Noto Serif** font family on your local system. You can download them for free from [Google Fonts](https://fonts.google.com/).
+
+---
+
 ## 🏷️ Tech Stack
 
 * PHP
