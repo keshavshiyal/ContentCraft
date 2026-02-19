@@ -47,6 +47,13 @@ Let AI assist with preparation.
 | --- |
 | <img src="assets/images/home.png" width="400">
 
+| Example Lesson plan generated |
+| --- | --- |
+| <img src="assets/images/example-lp (1).png" width="400"> | <img src="assets/images/example-lp (2).png" width="400"> |
+| <img src="assets/images/example-lp (3).png" width="400"> | <img src="assets/images/example-lp (4).png" width="400"> |
+| --- | --- |
+| <img src="assets/images/example-lp (5).png" width="400"> |
+
 ---
 
 ## 🌍 Multi-Language Support
